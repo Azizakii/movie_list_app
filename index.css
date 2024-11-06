@@ -1,0 +1,154 @@
+body {
+    color:white;
+    background-color: black;
+}
+
+.container {
+    margin-top: 40px;
+    width: 1000px;
+}
+
+.movies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movies__titles {
+    display: flex;
+
+}
+
+.movies__title{
+    box-sizing: border-box;
+    padding: 10px 25px;
+    border: 1px solid rgb(101, 50, 248);
+    border-radius: 200px;
+    background: rgb(101, 50, 248);
+    color: rgb(243, 246, 249);
+    font-family: 'Arimo';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+}
+
+.movies__text {
+    color: rgb(243, 246, 249);
+    font-family: 'Arimo';
+    font-size: 121px;
+    font-weight: 400;
+    line-height: 138px;
+    letter-spacing: -0.04em;
+}
+
+.movies__content {
+    max-height: 555px;
+    padding: 70px;
+    background-color: rgb(35, 35, 35);
+    border-radius: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.movies__content-title {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.movies__input {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    width: 441px;
+    border-bottom: 1px solid rgb(58, 57, 57);
+    color: white;
+}
+
+.movies__item-label:checked {
+    background-color: rgb(58, 57, 57);
+}
+
+.movies__item-label.checked {
+    color: #a9a9a9; 
+    text-decoration: line-through; 
+}
+
+.movies__button {
+    background-image: url('Vector.png');
+    width: 50px;
+    height: 50px;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(101, 50, 248);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.movies__list {
+    overflow-y: auto; 
+    max-height: 400px;
+    font-size: 30px;
+    font-family: 'Arimo';
+    overflow: scroll;
+}
+
+.movies__item {
+    position: relative;
+    background-color: rgb(58, 57, 57);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+
+.movies__item-btn {
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    right: 15px;
+    top: 22px;
+    background-image: url('close.png');
+    background-size: cover; 
+    width: 23px;
+    height: 23px;
+    z-index: 100;
+    background-color: none;
+}
+
+.movies__item-label {
+    display: flex;
+    align-items: center; 
+}
+
+.movies__item-input {
+    appearance: none; 
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(140, 136, 136);
+    border-radius: 50%; 
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.movies__item-label:hover {
+    color: rgb(101, 50, 248);
+}
+
+.movies__item-input:hover {
+    border: 2px solid rgb(101, 50, 248);
+}
+
+.movies__item-input:checked {
+    background-color: rgb(101, 50, 248);
+}
+
+.movies__item-label.checked {
+    color: #a9a9a9; 
+    text-decoration: line-through;
+}

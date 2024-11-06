@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie list app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="movies">
+        <div class="container">
+            <div class="movies__titles">
+                <h1 class="movies__title">список фильмов</h1>
+                <h2 class="movies__title">2024</h2>
+            </div>
+
+            <p class="movies__text">Посмотреть</p>
+
+
+            <div class="movies__content">
+                <div class="movies__content-title">
+                    <input 
+                    type="text"
+                    class="js-movies__input movies__input"
+                    placeholder="Добавить фильм">
+                    <button class="js-movies__button movies__button"></button>
+                </div>
+
+                <ul class="js-movies__list movies__list">
+                    
+                    <li class="js-movies__item movies__item">
+                        <label class="js-movies__item-label movies__item-label">
+                            <input class="movies__item-input js-movies__item-input"
+                            type="checkbox">
+                            Начало
+                        </label>
+                        <button class="js-movies__item-btn movies__item-btn"></button>
+                    </li>
+                    <li class="js-movies__item movies__item">
+                        <label class="js-movies__item-label movies__item-label">
+                            <input class="movies__item-input js-movies__item-input"
+                            type="checkbox">
+                            Аватар
+                        </label>
+                        <button class="js-movies__item-btn movies__item-btn"></button>
+                    </li>
+                    <li class="js-movies__item movies__item">
+                        <label class="js-movies__item-label movies__item-label">
+                            <input class="movies__item-input js-movies__item-input"
+                            type="checkbox">
+                            Субстанция
+                        </label>
+                        <button class="js-movies__item-btn movies__item-btn"></button>
+                    </li>
+                    <li class="js-movies__item movies__item">
+                        <label class="js-movies__item-label movies__item-label">
+                            <input class="movies__item-input js-movies__item-input"
+                            type="checkbox">
+                            Смерч 2
+                        </label>
+                        <button class="js-movies__item-btn movies__item-btn"></button>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
