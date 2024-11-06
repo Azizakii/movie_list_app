@@ -111,7 +111,8 @@ body {
     border: none;
     right: 15px;
     top: 22px;
-    background-image: url('close.png');
+    background-image: url('close.svg');
+    background-color: initial;
     background-size: cover; 
     width: 23px;
     height: 23px;
@@ -151,4 +152,8 @@ body {
 .movies__item-label.checked {
     color: #a9a9a9; 
     text-decoration: line-through;
+}
+
+.movies__item.checked {
+    background-color: rgba(58, 57, 57, 0.5); /* Полупрозрачный фон */
 }

@@ -1,4 +1,4 @@
-
+const CHECKED_FILM_CLASSNAME = 'checked';
 
 const inputNode = document.querySelector('.js-movies__input');
 const buttonNode = document.querySelector('.js-movies__button');
@@ -64,9 +64,13 @@ function clearInput(input) {
 
 listNode.addEventListener('click', (event) => {
     //кнопка просмотрено
-    if (event.target.classList.contains('js-movies__item-input')) {
+    const filmToWatch =event.target.classList.contains('js-movies__item-input');
+    if (filmToWatch) {
         const label = event.target.closest('.js-movies__item-label');
-        label.classList.toggle('checked', event.target.checked);
+        const listItem = event.target.closest('.js-movies__item');
+
+        label.classList.toggle(CHECKED_FILM_CLASSNAME, event.target.checked);
+        listItem.classList.toggle(CHECKED_FILM_CLASSNAME, event.target.checked);
     }
 
     //кнопка удаления
@@ -78,9 +82,5 @@ listNode.addEventListener('click', (event) => {
         }
         return;
     }
-
-
-
 });
-
 
